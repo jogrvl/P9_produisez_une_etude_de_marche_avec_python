@@ -1,29 +1,47 @@
-Analyse des opportunités d’exportation pour La poule qui chante
-🐔 Contexte du projet
+# Export Opportunity Analysis – La Poule qui Chante
 
-La poule qui chante est une entreprise française du secteur agroalimentaire souhaitant amorcer son développement à l’international.
-À ce stade, aucune zone géographique ni aucun pays n’est ciblé, et l’objectif est d’obtenir une première segmentation des pays du monde afin d’orienter les futures études de marché.
+## Context
+Data Analyst mission for a French agri-food company seeking to expand
+internationally. No target market had been defined yet — the goal was
+to build a data-driven country segmentation to guide future market
+research and export strategy for poultry products.
 
-Patrick, le manager du projet, a confié une mission d’analyse basée sur les données de la FAO (Food and Agriculture Organization), afin d’identifier des familles de pays pertinentes pour une stratégie d’exportation de produits avicoles.
+## Objectives
+- Explore and prepare FAO agricultural and economic datasets
+- Identify homogeneous country clusters as potential export targets
+- Compare clustering methodologies and interpret results
+- Deliver strategic recommendations based on data findings
 
-🎯 Objectifs de la mission
+## Methodology
+### Clustering
+- **Hierarchical Agglomerative Clustering (HAC)** with dendrogram
+  visualization to determine optimal number of clusters
+- **K-means clustering** with centroid analysis to profile
+  each country group
 
-Explorer et préparer les données issues de la FAO.
+### Dimensionality Reduction
+- **Principal Component Analysis (PCA)** to:
+  - Visualize countries in a reduced 2D space
+  - Understand variable correlations
+  - Interpret and characterize identified clusters
 
-Identifier des groupes homogènes de pays à partir de données agricoles, économiques ou structurelles.
+## Data Sources
+- FAO datasets: agricultural production, food availability,
+  economic and structural country indicators
 
-Comparer plusieurs méthodes de clustering :
+## Deliverables
+- Cleaned and prepared FAO dataset
+- Cluster analysis with HAC dendrogram and K-means profiles
+- PCA visualization with cluster interpretation
+- Strategic recommendations on priority export markets
 
-Classification Ascendante Hiérarchique (CAH) + dendrogramme
+## Tools & Skills
+- Python (pandas, scikit-learn, matplotlib, seaborn)
+- Unsupervised machine learning (clustering)
+- Dimensionality reduction (PCA)
+- Data storytelling and strategic analysis
 
-K-means + analyse des centroïdes
-
-Réaliser une ACP (Analyse en Composantes Principales) pour :
-
-visualiser les pays dans un espace réduit,
-
-comprendre les corrélations entre variables,
-
-interpréter les groupes identifiés.
-
-Produire une analyse argumentée et pédagogique, débouchant sur des recommandations stratégiques.
+## Key Learnings
+Combining unsupervised ML techniques with business context
+to produce actionable market segmentation recommendations
+from international agricultural datasets.
